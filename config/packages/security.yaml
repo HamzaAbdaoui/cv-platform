@@ -1,8 +1,6 @@
 security:
     encoders:
-        App\Entity\TestUser:
-            algorithm: auto
-        App\Entity\Login:
+        App\Entity\User:
             algorithm: auto
 
 
@@ -11,7 +9,7 @@ security:
         # used to reload user from session & other features (e.g. switch_user)
         app_user_provider:
             entity:
-                class: App\Entity\Login
+                class: App\Entity\User
                 property: username
         # used to reload user from session & other features (e.g. switch_user)
     firewalls:
